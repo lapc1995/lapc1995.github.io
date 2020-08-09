@@ -9,7 +9,7 @@ jobs:
       - name: Build
         uses: TartanLlama/actions-eleventy@v1.1
         with:
-          install_dependencies: true
+          INPUT_INSTALL_DEPENDENCIES: true
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v1.1.0
         env:
