@@ -94,6 +94,13 @@ module.exports = function(eleventyConfig) {
     ghostMode: false
   });
 
+
+  eleventyConfig.addLayoutAlias("education", "layouts/education.njk");
+  eleventyConfig.addLayoutAlias("work", "layouts/work.njk");
+
+
+
+
   return {
     templateFormats: [
       "md",

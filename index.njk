@@ -5,10 +5,33 @@ eleventyNavigation:
   order: 1
 ---
 
-<h1>Latest 3 Posts</h1>
+<h1 id="about"> <i class="fas fa-male" style="margin-right: 15px;"></i>About me </h1>
+<div style="display: flex; flex-wrap: wrap;justify-content: center;">
+  <figure style="flex: 0 1 200px;">
+    <img src="{{ '/img/profile.jpg' | url }}" style="width: 300px;border-radius: 1000px; filter: drop-shadow(2px 4px 6px black);" alt="A photogrph of my face">
+  </figure>
+  <div style="flex: 1 1 200px; margin: 20px;">
+    <p>I have recently attained an MSc in Software Engineering from the Faculty of Sciences – University of Lisbon and previously, a BSc in Computer Science in 2016 at the same institution.</p>
+    <p>During my BSc, I worked in a research group focused on the study of extremism in the context of social simulation using the evolutionary game theory.</p>
+    <p>I developed my master’s thesis in the research unit LASIGE at the Faculty of Sciences. The title of my master’s thesis is ”Supporting Homeless People with Interactive Voice Response Systems”. It aimed at exploring the relationship homeless people have with technology while focusing on their information and communication needs and limitations.</p>
+    <p>The research was done in collaboration with an organization whose goal is helping people abandon homelessness. As a result, my thesis focused not only the current use of technology among homeless people but also the relationships and tensions between social workers, volunteers and homeless people.</p>
+    <p>Previously, I worked as a Temporary Assistant in the context of the Open Movement Project, where I designed and developed the validation study of accelerometric data from a new Bluetooth-enabled wearable activity tracker, AxLE.</p>
+    <p>Currently, I am working as a Research Assistant on the Ongoingness project.</p>
+  </div>
+</div>
 
-{% set postslist = collections.posts | head(-3) %}
-{% set postslistCounter = collections.posts | length %}
-{% include "postslist.njk" %}
+<h1 id="experience"><i class="fas fa-briefcase" style="margin-right: 15px;"></i>Experience</h1>
+<div>
+  {% set educationList = collections.work %}
+  {% include "educationList.njk" %}
+</div>
 
-<p>More posts can be found in <a href="{{ '/posts/' | url }}">the archive</a>.</p>
+
+<h1 id="education"><i class="fas fa-graduation-cap" style="margin-right: 15px;"></i>Education</h1>
+<div>
+  {% set educationList = collections.education %}
+  {% include "educationList.njk" %}
+</div>
+
+<h1 id="publications"><i class="fas fa-file-alt" style="margin-right: 15px;"></i>Publications</h1>
+
