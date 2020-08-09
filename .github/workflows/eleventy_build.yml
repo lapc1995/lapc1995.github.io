@@ -6,10 +6,11 @@ jobs:
     runs-on: ubuntu-18.04
     steps:
       - uses: actions/checkout@master
+      - uses: bahmutov/npm-install@v1
       - name: Build
         uses: TartanLlama/actions-eleventy@v1.1
         with:
-          INPUT_INSTALL_DEPENDENCIES: true
+          install_dependencies: true
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v1.1.0
         env:
