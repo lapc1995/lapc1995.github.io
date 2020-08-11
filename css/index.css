@@ -10,9 +10,13 @@ body{
     margin: 0;
 }
 
+svg {
+    color: #4a4a4a;
+}
+
 header {
     display: flex;
-    max-width: var(--max-width);
+    max-width: 920px;
     margin: auto;
     padding: 0 20px;
 }
@@ -36,6 +40,7 @@ nav {
 
 nav a {
     margin: 0px 10px;
+    text-align: left;
 }
 
 a {
@@ -51,4 +56,47 @@ h1 {
     border-bottom: solid;
     margin: 20px;
     border-bottom-style: dotted;
+}
+
+.nav-container {
+    display: flex;
+    margin: 20px 0px;
+    margin-left: auto;
+}
+
+.mobile-nav-container {
+    display: none;
+}
+
+
+@media only screen and (max-width: 750px) {
+    .mobile-nav-container {
+        display: flex;
+        margin: auto;
+        margin-right: 20px;
+    }
+}
+
+@media only screen and (max-width: 750px) {
+    .nav-container {
+        display: none;
+    }
+}
+
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+    right: 40px;
+    width: 250px;
+    grid-template-columns: 50px auto;
+}
+
+.dropdown:hover .dropdown-content {
+    display: grid;
 }

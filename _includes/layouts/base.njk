@@ -15,13 +15,27 @@
   <body>
     <header>
       <h1 style="display: inline-block; margin-left: 0; border-style: none;">{{ metadata.title }}</h1>
-      <div style="display: flex; margin: 20px 0px">
+      <div class="nav-container">
         <nav>
             <a href="#about"><i class="fas fa-male" style="margin-right: 5px;"></i>About me</a>
             <a href="#experience"><i class="fas fa-briefcase" style="margin-right: 5px;"></i>Experience</a>
             <a href="#education"><i class="fas fa-graduation-cap" style="margin-right: 5px;"></i>Education</a>
             <a href="#publications"><i class="fas fa-file-alt" style="margin-right: 5px;"></i>Publications</a>
         </nav>
+      </div>
+      <div class="mobile-nav-container">
+        <button class="dropdown" style="font-size: 32px; background: none; border: none;"><i class="fas fa-bars"></i>
+        <nav id="dropdown" class="dropdown-content">
+          <span style="text-align: center;"><i class="fas fa-male" style="margin-right: 5px;"></i></span>
+          <a href="#about">About me</a> 
+          <span style="text-align: center;"><i class="fas fa-briefcase" style="margin-right: 5px;"></i></span>
+          <a href="#experience"></i>Experience</a>
+          <span style="text-align: center;"><i class="fas fa-graduation-cap" style="margin-right: 5px;"></i></span>
+          <a href="#education">Education</a>
+          <span style="text-align: center;"><i class="fas fa-file-alt" style="margin-right: 5px;"></i></span>
+          <a href="#publications">Publications</a>
+        </nav>
+      </button>
       </div>
     </header>
     <main>
@@ -31,6 +45,16 @@
 
     </footer>
 
-    <!-- Current page: {{ page.url | url }} -->
+    <script>
+      const dropdown = document.getElementById('dropdown');
+      
+      const openDropdown = () => {
+        console.log('ss');
+        dropdown.style.display = 'block';
+      }
+
+
+
+    </script>
   </body>
 </html>
