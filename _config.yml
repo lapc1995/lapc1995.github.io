@@ -1,5 +1,5 @@
 # Site
-title:              Massively
+title:              Luis Carvalho
 bio:                'Jekyll version of the Massively theme by HTML5UP'
 description:        "Jekyll version of the Massively theme by HTML5UP"
 locale:             en_US
@@ -10,16 +10,12 @@ url: "" # the base hostname & protocol for your site
 disqus_shortname:   default
 
 # Social
-analytics-id:       "default"
-twitter:            default
-facebook:           default
-instagram:          default
-github:             default
-
+google_scholar:     -N1we2sAAAAJ
+instagram:          luis_pcarvalho
+github:             lapc1995
 # personal
-location:           Los Angeles, CA
-phone:              310-318-5555
-email:              info@default.com # change this to your email to receive free emails for your contact submissions via Slapform.com
+location:           CIS Building, Northumbria University, Newcastle upon Tyne, Tyne & Wear, NE1 8ST
+email:              luis.carvalho@northumbria.ac.uk # change this to your email to receive free emails for your contact submissions via Slapform.com
 
 # Other
 background_image:   /images/bg.jpg
@@ -71,3 +67,4 @@ exclude: [README.md, Gemfile, Gemfile.lock, node_modules, gulpfile.js, package.j
 collections:
   - work
   - education
+  - portfolio

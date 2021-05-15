@@ -78,6 +78,19 @@ sitemap:
 
 							</article>
 
+							<section class="posts">
+								{% assign portfolio_reversed = site.portfolio | reverse %}
+								{% for project in portfolio_reversed %}
+								<article>
+									<header>
+										<h2><a href="{{ project.url | absolute_url }}">{{ project.title }}</a></h2>
+									</header>
+									<a href="{{ project.url | absolute_url }}" class="image fit"><img src="{{ project.images[0] | absolute_url }}" alt="" /></a>
+								</article>
+								{% endfor %}
+							</section>
+				
+
 						<!-- Posts -->
 							<section class="posts">
                 {% for post in site.posts limit:3 %}
