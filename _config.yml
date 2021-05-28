@@ -2,7 +2,7 @@
 title:              Luis Carvalho
 bio:                'Jekyll version of the Massively theme by HTML5UP'
 description:        "Jekyll version of the Massively theme by HTML5UP"
-locale:             en_US
+locale:             en_UK
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site
 
@@ -15,7 +15,7 @@ instagram:          luis_pcarvalho
 github:             lapc1995
 # personal
 location:           CIS Building, Northumbria University, Newcastle upon Tyne, Tyne & Wear, NE1 8ST
-email:              luis.carvalho@northumbria.ac.uk # change this to your email to receive free emails for your contact submissions via Slapform.com
+email:              luis.carvalho@northumbria.ac.uk
 
 # Other
 background_image:   /images/bg.jpg
@@ -65,6 +65,9 @@ exclude: [README.md, Gemfile, Gemfile.lock, node_modules, gulpfile.js, package.j
 
 
 collections:
-  - work
-  - education
-  - portfolio
+  work:
+    output: false
+  education:
+    output: false
+  portfolio:
+    output: true
