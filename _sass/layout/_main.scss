@@ -33,6 +33,7 @@
 				flex-wrap: wrap;
 				justify-content: center;
 				align-content: center;
+				padding-bottom: 4rem;
 
 				> article {
 					&.portfolio-item {
@@ -125,7 +126,7 @@
 
 		> .posts {
 			@include flexgrid((
-				columns:			2,
+				columns:			3,
 				gutters:			(_size(padding) * 4),
 				horizontal-align:	center,
 				vertical-align:		flex-start,
@@ -143,10 +144,6 @@
 
 				> :last-child {
 					margin-bottom: 0;
-				}
-
-				&:nth-child(2n - 1) {
-					border-left-width: 0;
 				}
 
 				&:nth-child(-n + 2) {
