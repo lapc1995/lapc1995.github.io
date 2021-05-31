@@ -93,6 +93,7 @@
 		h3,
 		p {
 			font-size: 0.8rem;
+			color: #4b5156;
 		}
 
 		@include breakpoint(medium) {
@@ -138,6 +139,7 @@
 			h3,
 			p {
 				font-size: 0.9rem;
+				color: #4b5156;
 			}
 		}
 
@@ -183,7 +185,8 @@
 	#copyright {
 		@include color-typography(invert);
 		position: relative;
-		color: transparentize(_palette(invert, fg), 0.75);
+		//color: transparentize(_palette(invert, fg), 0.75);
+		color: #b3b4b5;
 		cursor: default;
 		font-family: _font(family-heading);
 		font-size: 0.8rem;

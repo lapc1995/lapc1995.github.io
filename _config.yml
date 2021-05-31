@@ -6,9 +6,6 @@ locale:             en_UK
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site
 
-# Comments
-disqus_shortname:   default
-
 # Social
 google_scholar:     -N1we2sAAAAJ
 instagram:          luis_pcarvalho
@@ -20,7 +17,6 @@ email:              luis.carvalho@northumbria.ac.uk
 # Other
 background_image:   /images/bg.jpg
 # Tip: The color palette and other styles can be configured in /_sass/lib/_vars.scss
-slapform_thankyou_page: /thank-you
 
 defaults:
 - scope:
