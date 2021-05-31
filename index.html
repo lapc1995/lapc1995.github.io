@@ -39,14 +39,6 @@ sitemap:
 					{% assign portfolio_reversed = site.portfolio | reverse %}
 					{% for project in portfolio_reversed %}
 					<article class="portfolio-item">
-						<!--a href="{{ project.url | absolute_url }}" class="image fit">
-							<img src="{{ project.images[0] | absolute_url }}" alt="" />
-						</a>
-						<header>
-							<h2>
-								<a href="{{ project.url | absolute_url }}">{{ project.title }}</a>
-							</h2>
-						</header-->
 						<a href="{{ project.url | absolute_url }}" class="image fit">
 							<img src="{{ project.images[0] | absolute_url }}" alt="" />
 							<header>
@@ -70,14 +62,6 @@ sitemap:
 							<li><a href="{{ post.url | absolute_url }}" class="button">Full Story</a></li>
 						</ul>
 					</article>
-					{% if mod3 == 0 %}
-					<article>
-						<header>
-							<h2><a href="#">Sponsored</a></h2>
-						</header>
-
-					</article>
-					{% endif %}
 				{% endfor %}
 				</section>
 				<footer>
