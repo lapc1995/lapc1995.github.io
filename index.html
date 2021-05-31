@@ -30,18 +30,29 @@ sitemap:
 							With only a few edits, you can have a stunningly beautiful website <br />
 							nearly out of the box. Of course... you can always take it further <br />
 							and make it something even more amazing!
+
+							I am technologist 
 						</p>
 					</header>
 				</article>
-				<section style="display: flex; grid-gap: 1rem; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); flex-wrap: wrap;     justify-content: center;
-				align-content: center;">
+				<section class="portfolio-list">
 					{% assign portfolio_reversed = site.portfolio | reverse %}
 					{% for project in portfolio_reversed %}
-					<article style="width: 250px; height: 250px;">
-						<!--header>
-							<h2><a href="{{ project.url | absolute_url }}">{{ project.title }}</a></h2>
+					<article class="portfolio-item">
+						<!--a href="{{ project.url | absolute_url }}" class="image fit">
+							<img src="{{ project.images[0] | absolute_url }}" alt="" />
+						</a>
+						<header>
+							<h2>
+								<a href="{{ project.url | absolute_url }}">{{ project.title }}</a>
+							</h2>
 						</header-->
-						<a href="{{ project.url | absolute_url }}" class="image fit"><img src="{{ project.images[0] | absolute_url }}" alt="" /></a>
+						<a href="{{ project.url | absolute_url }}" class="image fit">
+							<img src="{{ project.images[0] | absolute_url }}" alt="" />
+							<header>
+								<h2> {{ project.title }} </h2>
+							</header>
+						</a>				
 					</article>
 					{% endfor %}
 				</section>
