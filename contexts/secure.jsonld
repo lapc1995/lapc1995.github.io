@@ -1,5 +1,6 @@
+
 {
-"@context": {
+  "@context": {
     "brick": "https://brickschema.org/schema/Brick#",
     "csvw": "http://www.w3.org/ns/csvw#",
     "dc": "http://purl.org/dc/elements/1.1/",
@@ -29,23 +30,19 @@
     "wgs": "https://www.w3.org/2003/01/geo/wgs84_pos#",
     "xsd": "http://www.w3.org/2001/XMLSchema#",
     "lapc": "https://luiscarvalho.dev/contexts/"
-},
-"@graph": [
+  },
+  "@id": "lapc:secure",
+  "@type": "rdf:Property",
+  "rdfs:comment": "If the cookie is secure.",
+  "rdfs:label": "secure",
+  "schema:domainIncludes": [
     {
-        "@id": "lapc:secure",
-        "@type": "rdf:Property",
-        "rdfs:comment": "If the cookie is secure.",
-        "rdfs:label": "secure",
-        "schema:domainIncludes": [
-          {
-            "@id": "lapc:Cookie"
-          }
-        ],
-        "schema:rangeIncludes": [
-          {
-            "@id": "schema:boolean"
-          }
-        ]
-      }
-]
+      "@id": "lapc:Cookie"
+    }
+  ],
+  "schema:rangeIncludes": [
+    {
+      "@id": "schema:boolean"
+    }
+  ]
 }
