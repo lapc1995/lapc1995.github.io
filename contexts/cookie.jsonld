@@ -35,5 +35,20 @@
     "rdfs:Class"
 ],
 "rdfs:comment": "Cookie",
-"rdfs:label": "Cookie"
+"rdfs:label": "Cookie",
+"name": "http://schema.org/name",
+"value": "http://schema.org/text",
+"domain":  {
+    "@id": "http://schema.org/url",
+    "@type": "@id"
+},
+"path": "http://schema.org/text",
+"expires": "https://schema.org/Integer",
+"size": "https://schema.org/Integer",
+"httpOnly": "http://schema.org/boolean",
+"secure": "http://schema.org/boolean",
+"session": "http://schema.org/boolean",
+"sameParty": "http://schema.org/boolean",
+"sourceScheme": "http://schema.org/text",
+"sourcePort": "https://schema.org/Integer"
 }
