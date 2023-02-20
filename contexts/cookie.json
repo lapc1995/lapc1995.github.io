@@ -32,13 +32,13 @@
 },
 "@graph": [
     {
-        "@id": "lapc:secure",
+        "@id": "lapc:secure.json",
         "@type": "rdf:Property",
         "rdfs:comment": "If the cookie is secure.",
         "rdfs:label": "secure",
         "schema:domainIncludes": [
           {
-            "@id": "lapc:Cookie"
+            "@id": "lapc:cookie.json"
           }
         ],
         "schema:rangeIncludes": [

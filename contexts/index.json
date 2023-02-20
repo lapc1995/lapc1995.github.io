@@ -36,8 +36,8 @@
         "dct": "http://purl.org/dc/terms/",
         "dctype": "http://purl.org/dc/dcmitype/",
         "lapc": "https://luiscarvalho.dev/contexts/",
-        "cookie": {"@id": "lapc:cookie"},
-        "secure": { "@id": "lapc:secure"}
+        "cookie": {"@id": "lapc:cookie.json"},
+        "secure": { "@id": "lapc:secure.json"}
     }
 
 }

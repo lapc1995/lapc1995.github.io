@@ -31,13 +31,13 @@
     "xsd": "http://www.w3.org/2001/XMLSchema#",
     "lapc": "https://luiscarvalho.dev/contexts/"
   },
-  "@id": "lapc:secure",
+  "@id": "lapc:secure.json",
   "@type": "rdf:Property",
   "rdfs:comment": "If the cookie is secure.",
   "rdfs:label": "secure",
   "schema:domainIncludes": [
     {
-      "@id": "lapc:Cookie"
+      "@id": "lapc:cookie.json"
     }
   ],
   "schema:rangeIncludes": [
