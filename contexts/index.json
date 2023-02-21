@@ -55,6 +55,11 @@
         "coverage" : { "@id": "lapc:coverage.json" },
         "jsCoverage" : { "@id": "lapc:coverage.json" },
         "cssCoverage" : { "@id": "lapc:coverage.json" },
+        "url" : { "@id": "lapc:url.json" },
+        "coverageType" : { "@id": "lapc:coverageType.json" },
+        "usedBytes": { "@id": "lapc:usedBytes.json" },
+        "totalBytes": { "@id": "lapc:totalBytes.json" },
+        "percentUsed": { "@id": "lapc:percentUsed.json" },
 
         "pageReport" : { "@id": "lapc:pageReport.json" }
     }

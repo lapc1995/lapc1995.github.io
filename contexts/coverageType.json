@@ -30,10 +30,10 @@
       "xsd": "http://www.w3.org/2001/XMLSchema#",
       "lapc": "https://luiscarvalho.dev/contexts/"
     },
-    "@id": "lapc:type.json",
+    "@id": "lapc:coverageType.json",
     "@type": "rdf:Property",
     "rdfs:comment": "Type of the coverage.",
-    "rdfs:label": "type",
+    "rdfs:label": "coverageType",
     "schema:domainIncludes": {
       "@id": "lapc:coverage.json"
     },

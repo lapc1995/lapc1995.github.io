@@ -50,10 +50,10 @@
         }
       },  
       {
-        "@id": "lapc:type.json",
+        "@id": "lapc:coverageType.json",
         "@type": "rdf:Property",
         "rdfs:comment": "Type of the coverage.",
-        "rdfs:label": "type",
+        "rdfs:label": "coverageType",
         "schema:domainIncludes": {
           "@id": "lapc:coverage.json"
         },
