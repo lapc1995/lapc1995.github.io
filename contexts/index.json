@@ -61,6 +61,10 @@
         "totalBytes": { "@id": "lapc:totalBytes.json" },
         "percentUsed": { "@id": "lapc:percentUsed.json" },
 
+        "alink": { "@id": "lapc:alink.json" },
+        "alinks": { "@id": "lapc:alink.json" },
+
+
         "pageReport" : { "@id": "lapc:pageReport.json" }
     }
 
