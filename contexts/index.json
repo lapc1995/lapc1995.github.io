@@ -53,8 +53,8 @@
         "sourcePort": { "@id": "lapc:sourcePort.json" },
 
         "coverage" : { "@id": "lapc:coverage.json" },
-        "jsCoverage" : { "@id": "lapc:coverage.json" },
-        "cssCoverage" : { "@id": "lapc:coverage.json" },
+        "jsCoverage" : { "@id": "lapc:jsCoverage.json" },
+        "cssCoverage" : { "@id": "lapc:cssCoverage.json" },
         "url" : { "@id": "lapc:url.json" },
         "coverageType" : { "@id": "lapc:coverageType.json" },
         "usedBytes": { "@id": "lapc:usedBytes.json" },

@@ -32,47 +32,71 @@
     },
     "@graph": [
       {
-        "@id": "lapc:pageReport.json",
+        "@id": "lapc:cssCoverage.json",
         "@type": "rdfs:Class",
-        "rdfs:comment": "A page report.",
-        "rdfs:label": "PageReport"
+        "rdfs:comment": "Page css coverage report element.",
+        "rdfs:label": "cssCoverage"
       },
       {
-        "@id": "lapc:cookie.json",
+        "@id": "lapc:url.json",
         "@type": "rdf:Property",
-        "rdfs:comment": "Cookies found in the page",
-        "rdfs:label": "cookies",
+        "rdfs:comment": "Url of the coverage.",
+        "rdfs:label": "url",
         "schema:domainIncludes": {
-          "@id": "lapc:pageReport.json"
+          "@id": "lapc:coverage.json"
         },
         "schema:rangeIncludes": {
-          "@id": "lapc:cookie.json"
+          "@id": "schema:URL"
+        }
+      },  
+      {
+        "@id": "lapc:coverageType.json",
+        "@type": "rdf:Property",
+        "rdfs:comment": "Type of the coverage.",
+        "rdfs:label": "coverageType",
+        "schema:domainIncludes": {
+          "@id": "lapc:coverage.json"
+        },
+        "schema:rangeIncludes": {
+          "@id": "schema:Text"
         }
       },
       {
-        "@id": "lapc:jsCoverage.json",
+        "@id": "lapc:usedBytes.json",
         "@type": "rdf:Property",
-        "rdfs:comment": "Page js coverage report element.",
-        "rdfs:label": "jsCoverage",
+        "rdfs:comment": "usedBytes of the coverage.",
+        "rdfs:label": "usedBytes",
         "schema:domainIncludes": {
-            "@id": "lapc:pageReport.json"
-          },
-          "schema:rangeIncludes": {
-            "@id": "lapc:cssCoverage.json"
-          }
+          "@id": "lapc:coverage.json"
+        },
+        "schema:rangeIncludes": {
+          "@id": "schema:Integer"
+        }
       },
       {
-        "@id": "lapc:cssCoverage.json",
+        "@id": "lapc:totalBytes.json",
         "@type": "rdf:Property",
-        "rdfs:comment": "Page css coverage report element.",
-        "rdfs:label": "cssCoverage",
+        "rdfs:comment": "totalBytes of the coverage.",
+        "rdfs:label": "totalBytes",
         "schema:domainIncludes": {
-            "@id": "lapc:pageReport.json"
-          },
-          "schema:rangeIncludes": {
-            "@id": "lapc:cssCoverage.json"
-          }
+          "@id": "lapc:coverage.json"
+        },
+        "schema:rangeIncludes": {
+          "@id": "schema:Integer"
+        }
+      },
+      {
+        "@id": "lapc:percentUsed.json",
+        "@type": "rdf:Property",
+        "rdfs:comment": "percentUsed of the coverage.",
+        "rdfs:label": "percentUsed",
+        "schema:domainIncludes": {
+          "@id": "lapc:coverage.json"
+        },
+        "schema:rangeIncludes": {
+          "@id": "schema:Text"
+        }
       }
     ]
-}
+    }
     
