@@ -30,10 +30,10 @@
     "xsd": "http://www.w3.org/2001/XMLSchema#",
     "lapc": "https://luiscarvalho.dev/contexts/"
   },
-  "@id": "lapc:secure.json",
+  "@id": "lapc:session.json",
   "@type": "rdf:Property",
-  "rdfs:comment": "If the cookie is secure.",
-  "rdfs:label": "secure",
+  "rdfs:comment": "If the cookie is session.",
+  "rdfs:label": "session",
   "schema:domainIncludes": [
     {
       "@id": "lapc:cookie.json"

@@ -31,21 +31,155 @@
     "lapc": "https://luiscarvalho.dev/contexts/"
 },
 "@graph": [
-    {
-        "@id": "lapc:secure.json",
-        "@type": "rdf:Property",
-        "rdfs:comment": "If the cookie is secure.",
-        "rdfs:label": "secure",
-        "schema:domainIncludes": [
-          {
-            "@id": "lapc:cookie.json"
-          }
-        ],
-        "schema:rangeIncludes": [
-          {
-            "@id": "schema:boolean"
-          }
-        ]
-      }
+  {
+    "@id": "lapc:cookie.json",
+    "@type": "rdfs:Class",
+    "rdfs:comment": "A cookie.",
+    "rdfs:label": "Cookie"
+  },
+  {
+    "@id": "lapc:name.json",
+    "@type": "rdf:Property",
+    "rdfs:comment": "Name of the cookie",
+    "rdfs:label": "name",
+    "schema:domainIncludes": {
+      "@id": "lapc:cookie.json"
+    },
+    "schema:rangeIncludes": {
+      "@id": "schema:Text"
+    }
+  },  
+  {
+    "@id": "lapc:value.json",
+    "@type": "rdf:Property",
+    "rdfs:comment": "Value of the cookie",
+    "rdfs:label": "value",
+    "schema:domainIncludes": {
+      "@id": "lapc:cookie.json"
+    },
+    "schema:rangeIncludes": {
+      "@id": "schema:Text"
+    }
+  },
+  {
+    "@id": "lapc:domain.json",
+    "@type": "rdf:Property",
+    "rdfs:comment": "Domain of the cookie",
+    "rdfs:label": "domain",
+    "schema:domainIncludes": {
+      "@id": "lapc:cookie.json"
+    },
+    "schema:rangeIncludes": {
+      "@id": "schema:URL"
+    }
+  },
+  {
+    "@id": "lapc:path.json",
+    "@type": "rdf:Property",
+    "rdfs:comment": "Path of the cookie",
+    "rdfs:label": "path",
+    "schema:domainIncludes": {
+      "@id": "lapc:cookie.json"
+    },
+    "schema:rangeIncludes": {
+      "@id": "schema:Text"
+    }
+  },
+  {
+    "@id": "lapc:expires.json",
+    "@type": "rdf:Property",
+    "rdfs:comment": "Expiration date of the cookie.",
+    "rdfs:label": "expires",
+    "schema:domainIncludes": {
+      "@id": "lapc:cookie.json"
+    },
+    "schema:rangeIncludes": {
+      "@id": "schema:Integer"
+    }
+  },
+  {
+    "@id": "lapc:size.json",
+    "@type": "rdf:Property",
+    "rdfs:comment": "Size of the cookie.",
+    "rdfs:label": "size",
+    "schema:domainIncludes": {
+      "@id": "lapc:cookie.json"
+    },
+    "schema:rangeIncludes": {
+      "@id": "schema:Integer"
+    }
+  },
+  {
+    "@id": "lapc:httpOnly.json",
+    "@type": "rdf:Property",
+    "rdfs:comment": "Cookie is httpOnly.",
+    "rdfs:label": "httpOnly",
+    "schema:domainIncludes": {
+      "@id": "lapc:cookie.json"
+    },
+    "schema:rangeIncludes": {
+      "@id": "schema:Boolean"
+    }
+  },
+  {
+    "@id": "lapc:session.json",
+    "@type": "rdf:Property",
+    "rdfs:comment": "Cookie is session.",
+    "rdfs:label": "session",
+    "schema:domainIncludes": {
+      "@id": "lapc:cookie.json"
+    },
+    "schema:rangeIncludes": {
+      "@id": "schema:Boolean"
+    }
+  },
+  {
+    "@id": "lapc:sameParty.json",
+    "@type": "rdf:Property",
+    "rdfs:comment": "Cookie is sameParty.",
+    "rdfs:label": "sameParty",
+    "schema:domainIncludes": {
+      "@id": "lapc:cookie.json"
+    },
+    "schema:rangeIncludes": {
+      "@id": "schema:Boolean"
+    }
+  },
+  {
+    "@id": "lapc:sourceScheme.json",
+    "@type": "rdf:Property",
+    "rdfs:comment": "Cookie is sourceScheme.",
+    "rdfs:label": "sourceScheme",
+    "schema:domainIncludes": {
+      "@id": "lapc:cookie.json"
+    },
+    "schema:rangeIncludes": {
+      "@id": "schema:Text"
+    }
+  },
+  {
+    "@id": "lapc:sourcePort.json",
+    "@type": "rdf:Property",
+    "rdfs:comment": "Cookie is sourcePort.",
+    "rdfs:label": "sourcePort",
+    "schema:domainIncludes": {
+      "@id": "lapc:cookie.json"
+    },
+    "schema:rangeIncludes": {
+      "@id": "schema:Integer"
+    }
+  },
+  {
+    "@id": "lapc:secure.json",
+    "@type": "rdf:Property",
+    "rdfs:comment": "Cookie is secure.",
+    "rdfs:label": "secure",
+    "schema:domainIncludes": {
+      "@id": "lapc:cookie.json"
+    },
+    "schema:rangeIncludes": {
+      "@id": "schema:Boolean"
+    }
+  },
 ]
 }
