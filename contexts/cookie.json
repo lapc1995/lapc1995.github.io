@@ -180,6 +180,6 @@
     "schema:rangeIncludes": {
       "@id": "schema:Boolean"
     }
-  },
+  }
 ]
 }
