@@ -38,6 +38,7 @@
         "lapc": "https://luiscarvalho.dev/contexts/",
         
         "cookie": {"@id": "lapc:cookie.json"},
+        "cookies": {"@id": "lapc:cookie.json"},
         "secure": { "@id": "lapc:secure.json"},
         "name": { "@id": "lapc:name.json" },
         "value": { "@id": "lapc:value.json" },
