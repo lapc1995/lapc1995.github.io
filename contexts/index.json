@@ -52,6 +52,10 @@
         "sourceScheme": { "@id": "lapc:sourceScheme.json" },
         "sourcePort": { "@id": "lapc:sourcePort.json" },
 
+        "coverage" : { "@id": "lapc:coverage.json" },
+        "jsCoverage" : { "@id": "lapc:coverage.json" },
+        "cssCoverage" : { "@id": "lapc:coverage.json" },
+
         "pageReport" : { "@id": "lapc:pageReport.json" }
     }
 

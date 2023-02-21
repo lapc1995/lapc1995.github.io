@@ -32,29 +32,71 @@
     },
     "@graph": [
       {
-        "@id": "lapc:pageReport.json",
-        "@type": "rdfs:Class",
-        "rdfs:comment": "A page report.",
-        "rdfs:label": "PageReport"
-      },
-      {
-        "@id": "lapc:cookie.json",
-        "@type": "rdf:Property",
-        "rdfs:comment": "Cookies found in the page",
-        "rdfs:label": "cookies",
-        "schema:domainIncludes": {
-          "@id": "lapc:pageReport.json"
-        },
-        "schema:rangeIncludes": {
-          "@id": "lapc:cookie.json"
-        }
-      },
-      {
         "@id": "lapc:coverage.json",
         "@type": "rdfs:Class",
         "rdfs:comment": "Page coverage report element.",
         "rdfs:label": "coverage"
+      },
+      {
+        "@id": "lapc:url.json",
+        "@type": "rdf:Property",
+        "rdfs:comment": "Url of the coverage.",
+        "rdfs:label": "url",
+        "schema:domainIncludes": {
+          "@id": "lapc:coverage.json"
+        },
+        "schema:rangeIncludes": {
+          "@id": "schema:URL"
+        }
+      },  
+      {
+        "@id": "lapc:type.json",
+        "@type": "rdf:Property",
+        "rdfs:comment": "Type of the coverage.",
+        "rdfs:label": "type",
+        "schema:domainIncludes": {
+          "@id": "lapc:coverage.json"
+        },
+        "schema:rangeIncludes": {
+          "@id": "schema:Text"
+        }
+      },
+      {
+        "@id": "lapc:usedBytes.json",
+        "@type": "rdf:Property",
+        "rdfs:comment": "usedBytes of the coverage.",
+        "rdfs:label": "usedBytes",
+        "schema:domainIncludes": {
+          "@id": "lapc:coverage.json"
+        },
+        "schema:rangeIncludes": {
+          "@id": "schema:Integer"
+        }
+      },
+      {
+        "@id": "lapc:totalBytes.json",
+        "@type": "rdf:Property",
+        "rdfs:comment": "totalBytes of the coverage.",
+        "rdfs:label": "totalBytes",
+        "schema:domainIncludes": {
+          "@id": "lapc:coverage.json"
+        },
+        "schema:rangeIncludes": {
+          "@id": "schema:Integer"
+        }
+      },
+      {
+        "@id": "lapc:percentUsed.json",
+        "@type": "rdf:Property",
+        "rdfs:comment": "percentUsed of the coverage.",
+        "rdfs:label": "percentUsed",
+        "schema:domainIncludes": {
+          "@id": "lapc:coverage.json"
+        },
+        "schema:rangeIncludes": {
+          "@id": "schema:Text"
+        }
       }
     ]
-}
+    }
     

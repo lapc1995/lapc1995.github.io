@@ -35,7 +35,7 @@
     "@id": "lapc:cookie.json",
     "@type": "rdfs:Class",
     "rdfs:comment": "A cookie.",
-    "rdfs:label": "Cookie"
+    "rdfs:label": "cookie"
   },
   {
     "@id": "lapc:name.json",
