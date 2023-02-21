@@ -36,6 +36,7 @@
         "dct": "http://purl.org/dc/terms/",
         "dctype": "http://purl.org/dc/dcmitype/",
         "lapc": "https://luiscarvalho.dev/contexts/",
+        
         "cookie": {"@id": "lapc:cookie.json"},
         "secure": { "@id": "lapc:secure.json"},
         "name": { "@id": "lapc:name.json" },
@@ -48,7 +49,9 @@
         "session": { "@id": "lapc:session.json" },
         "sameParty": { "@id": "lapc:sameParty.json" },
         "sourceScheme": { "@id": "lapc:sourceScheme.json" },
-        "sourcePort": { "@id": "lapc:sourcePort.json" }
+        "sourcePort": { "@id": "lapc:sourcePort.json" },
+
+        "pageReport" : { "@id": "lapc:pageReport.json" }
     }
 
 }
