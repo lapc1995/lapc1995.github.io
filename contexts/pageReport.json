@@ -41,7 +41,7 @@
         "@id": "lapc:cookie.json",
         "@type": "rdf:Property",
         "rdfs:comment": "Cookies found in the page",
-        "rdfs:label": "cookie",
+        "rdfs:label": "cookies",
         "schema:domainIncludes": {
           "@id": "lapc:pageReport.json"
         },
