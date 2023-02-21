@@ -66,6 +66,12 @@
         "href": { "@id": "lapc:href.json" },
         "textContent": { "@id": "lapc:textContent.json" },
 
+        "image": { "@id": "lapc:image.json" },
+        "images": { "@id": "lapc:image.json" },
+        "alt": { "@id": "lapc:alt.json" },
+        "src": { "@id": "lapc:src.json" },
+
+
 
         "pageReport" : { "@id": "lapc:pageReport.json" }
     }
