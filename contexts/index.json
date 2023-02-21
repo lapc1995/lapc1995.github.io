@@ -63,6 +63,8 @@
 
         "alink": { "@id": "lapc:alink.json" },
         "alinks": { "@id": "lapc:alink.json" },
+        "href": { "@id": "lapc:href.json" },
+        "textContent": { "@id": "lapc:textContent.json" },
 
 
         "pageReport" : { "@id": "lapc:pageReport.json" }
