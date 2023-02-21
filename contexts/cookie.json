@@ -43,7 +43,7 @@
     "rdfs:comment": "Name of the cookie",
     "rdfs:label": "name",
     "schema:domainIncludes": {
-      "@id": "lapc:cookie.json"
+      "@id": "lapc:pageReport.json"
     },
     "schema:rangeIncludes": {
       "@id": "schema:Text"
