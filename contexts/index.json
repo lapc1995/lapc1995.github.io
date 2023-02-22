@@ -83,6 +83,43 @@
         "id": { "@id": "lapc:id.json" },
         "priority": { "@id": "lapc:priority.json" },
 
+        "testEngine": { "@id": "lapc:testEngine.json" },
+        "testRunner": { "@id": "lapc:testRunner.json" },
+        "testEnvironment": { "@id": "lapc:testEnvironment.json" },
+        "userAgent": { "@id": "lapc:userAgent.json" },
+        "windowWidth": { "@id": "lapc:windowWidth.json" },
+        "windowHeight": { "@id": "lapc:windowHeight.json" },
+        "orientationAngle": { "@id": "lapc:orientationAngle.json" },
+        "orientationType": { "@id": "lapc:orientationType.json" },
+        "toolOptions": { "@id": "lapc:toolOptions.json" },
+        "reporter": { "@id": "lapc:reporter.json" },
+        "passes": { "@id": "lapc:passes.json" },
+        "incomplete": { "@id": "lapc:incomplete.json" },
+        "violations": { "@id": "lapc:violations.json" },
+        "impact": { "@id": "lapc:impact.json" },
+        "tags": { "@id": "lapc:tags.json" },
+        "nodes": { "@id": "lapc:nodes.json" },
+        "any": { "@id": "lapc:any.json" },
+        "all": { "@id": "lapc:all.json" },
+        "none": { "@id": "lapc:none.json" },
+        "html": { "@id": "lapc:html.json" },
+        "target": { "@id": "lapc:target.json" },
+        "failureSummary": { "@id": "lapc:failureSummary.json" },
+        "relatedNodes": { "@id": "lapc:relatedNodes.json" },
+        "data": { "@id": "lapc:data.json" },
+        "role": { "@id": "lapc:role.json" },
+        "accessibleText": { "@id": "lapc:accessibleText.json" },
+        "isIframe": { "@id": "lapc:isIframe.json" },
+        "fgColor": { "@id": "lapc:fgColor.json" },
+        "bgColor": { "@id": "lapc:bgColor.json" },
+        "contrastRatio": { "@id": "lapc:contrastRatio.json" },
+        "fontSize": { "@id": "lapc:fontSize.json" },
+        "fontWeight": { "@id": "lapc:fontWeight.json" },
+        "expectedContrastRatio": { "@id": "lapc:expectedContrastRatio.json" },
+        "timestamp": { "@id": "lapc:timestamp.json" },
+
+    
+
 
         "pageReport" : { "@id": "lapc:pageReport.json" }
     }

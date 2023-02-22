@@ -1,0 +1,150 @@
+{
+    "@context": {
+        "brick": "https://brickschema.org/schema/Brick#",
+        "csvw": "http://www.w3.org/ns/csvw#",
+        "dc": "http://purl.org/dc/elements/1.1/",
+        "dcam": "http://purl.org/dc/dcam/",
+        "dcat": "http://www.w3.org/ns/dcat#",
+        "dcmitype": "http://purl.org/dc/dcmitype/",
+        "dcterms": "http://purl.org/dc/terms/",
+        "doap": "http://usefulinc.com/ns/doap#",
+        "foaf": "http://xmlns.com/foaf/0.1/",
+        "geo": "http://www.opengis.net/ont/geosparql#",
+        "odrl": "http://www.w3.org/ns/odrl/2/",
+        "org": "http://www.w3.org/ns/org#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "prof": "http://www.w3.org/ns/dx/prof/",
+        "prov": "http://www.w3.org/ns/prov#",
+        "qb": "http://purl.org/linked-data/cube#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "schema": "https://schema.org/",
+        "sh": "http://www.w3.org/ns/shacl#",
+        "skos": "http://www.w3.org/2004/02/skos/core#",
+        "sosa": "http://www.w3.org/ns/sosa/",
+        "ssn": "http://www.w3.org/ns/ssn/",
+        "time": "http://www.w3.org/2006/time#",
+        "vann": "http://purl.org/vocab/vann/",
+        "void": "http://rdfs.org/ns/void#",
+        "wgs": "https://www.w3.org/2003/01/geo/wgs84_pos#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#",
+        "lapc": "https://luiscarvalho.dev/contexts/"
+    },
+    "@graph": [
+      {
+        "@id": "lapc:accessibility.json",
+        "@type": "rdfs:Class",
+        "rdfs:comment": "A accessibility.",
+        "rdfs:label": "accessibility"
+      },
+      {
+        "@id": "lapc:testEngine.json",
+        "@type": "rdf:Property",
+        "rdfs:comment": "testEngine",
+        "rdfs:label": "testEngine",
+        "schema:domainIncludes": {
+          "@id": "lapc:accessibility.json"
+        },
+        "schema:rangeIncludes": {
+          "@id": "lapc:testEngine.json"
+        }
+      },  
+      {
+        "@id": "lapc:testRunner.json",
+        "@type": "rdf:Property",
+        "rdfs:comment": "testRunner",
+        "rdfs:label": "testRunner",
+        "schema:domainIncludes": {
+          "@id": "lapc:accessibility.json"
+        },
+        "schema:rangeIncludes": {
+          "@id": "lapc:testRunner.json"
+        }
+      },
+      {
+        "@id": "lapc:testEnvironment.json",
+        "@type": "rdf:Property",
+        "rdfs:comment": "testEnvironment",
+        "rdfs:label": "testEnvironment",
+        "schema:domainIncludes": {
+          "@id": "lapc:accessibility.json"
+        },
+        "schema:rangeIncludes": {
+          "@id": "lapc:testEnvironment.json"
+        }
+      },
+      {
+        "@id": "lapc:timestamp.json",
+        "@type": "rdf:Property",
+        "rdfs:comment": "timestamp",
+        "rdfs:label": "timestamp",
+        "schema:domainIncludes": {
+          "@id": "lapc:accessibility.json"
+        },
+        "schema:rangeIncludes": {
+          "@id": "schema:DateTime"
+        }
+      },
+      {
+        "@id": "lapc:url.json",
+        "@type": "rdf:Property",
+        "rdfs:comment": "url.",
+        "rdfs:label": "url",
+        "schema:domainIncludes": {
+          "@id": "lapc:accessibility.json"
+        },
+        "schema:rangeIncludes": {
+          "@id": "schema:URL"
+        }
+      },
+      {
+        "@id": "lapc:toolOptions.json",
+        "@type": "rdf:Property",
+        "rdfs:comment": "toolOptions",
+        "rdfs:label": "toolOptions",
+        "schema:domainIncludes": {
+          "@id": "lapc:accessibility.json"
+        },
+        "schema:rangeIncludes": {
+          "@id": "lapc:toolOptions.json"
+        }
+      },
+      {
+        "@id": "lapc:passes.json",
+        "@type": "rdf:Property",
+        "rdfs:comment": "passes.",
+        "rdfs:label": "passes",
+        "schema:domainIncludes": {
+          "@id": "lapc:accessibility.json"
+        },
+        "schema:rangeIncludes": {
+          "@id": "lapc:passes.json"
+        }
+      },
+      {
+        "@id": "lapc:incomplete.json",
+        "@type": "rdf:Property",
+        "rdfs:comment": "incomplete",
+        "rdfs:label": "incomplete",
+        "schema:domainIncludes": {
+          "@id": "lapc:accessibility.json"
+        },
+        "schema:rangeIncludes": {
+          "@id": "lapc:incomplete.json"
+        }
+      },
+      {
+        "@id": "lapc:violations.json",
+        "@type": "rdf:Property",
+        "rdfs:comment": "violations",
+        "rdfs:label": "violations",
+        "schema:domainIncludes": {
+          "@id": "lapc:accessibility.json"
+        },
+        "schema:rangeIncludes": {
+          "@id": "lapc:violations.json"
+        }
+      }
+    ]
+    }
+    

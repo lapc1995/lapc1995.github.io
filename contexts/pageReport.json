@@ -108,6 +108,18 @@
           "schema:rangeIncludes": {
             "@id": "lapc:technology.json"
           }
+      },
+      {
+        "@id": "lapc:accessibility.json",
+        "@type": "rdf:Property",
+        "rdfs:comment": "A accessibility.",
+        "rdfs:label": "accessibility",
+        "schema:domainIncludes": {
+            "@id": "lapc:pageReport.json"
+          },
+          "schema:rangeIncludes": {
+            "@id": "lapc:accessibility.json"
+          }
       }
     ]
 }
