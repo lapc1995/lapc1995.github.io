@@ -156,6 +156,30 @@
           "schema:rangeIncludes": {
             "@id": "schema:Text"
           }
+      },
+      {
+        "@id": "lapc:externalJavascript.json",
+        "@type": "rdf:Property",
+        "rdfs:comment": "externalJavascript.",
+        "rdfs:label": "externalJavascript",
+        "schema:domainIncludes": {
+            "@id": "lapc:pageReport.json"
+          },
+          "schema:rangeIncludes": {
+            "@id": "schema:URL"
+          }
+      },
+      {
+        "@id": "lapc:externalCSS.json",
+        "@type": "rdf:Property",
+        "rdfs:comment": "externalCSS.",
+        "rdfs:label": "externalCSS",
+        "schema:domainIncludes": {
+            "@id": "lapc:pageReport.json"
+          },
+          "schema:rangeIncludes": {
+            "@id": "schema:URL"
+          }
       }
     ]
 }

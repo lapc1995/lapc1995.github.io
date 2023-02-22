@@ -120,6 +120,8 @@
         "originalUrl": { "@id": "lapc:originalUrl.json" },
         "date": { "@id": "lapc:date.json" },
         "filename": { "@id": "lapc:filename.json" },
+        "externalJavascript": { "@id": "lapc:externalJavascript.json" },
+        "externalCSS": { "@id": "lapc:externalCSS.json" },
 
         "pageReport" : { "@id": "lapc:pageReport.json" }
     }
