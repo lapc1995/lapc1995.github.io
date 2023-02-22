@@ -144,6 +144,19 @@
     "schema:rangeIncludes": {
       "@id": "schema:Text"
     }
+  },
+  {
+    "@id": "lapc:headingOrder.json",
+    "@type": "rdf:Property",
+    "rdfs:comment": "headingOrder",
+    "rdfs:label": "headingOrder",
+    "schema:domainIncludes": {
+      "@id": "lapc:data.json"
+    },
+    "schema:rangeIncludes": {
+      "@id": "schema:headingOrder.json"
+    }
   }
+
 ]
 }

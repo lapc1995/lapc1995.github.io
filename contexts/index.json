@@ -56,7 +56,7 @@
         "jsCoverage" : { "@id": "lapc:jsCoverage.json" },
         "cssCoverage" : { "@id": "lapc:cssCoverage.json" },
         "url" : { "@id": "lapc:url.json" },
-        "coverageType" : { "@id": "lapc:coverageType.json" },
+        "type" : { "@id": "lapc:type.json" },
         "usedBytes": { "@id": "lapc:usedBytes.json" },
         "totalBytes": { "@id": "lapc:totalBytes.json" },
         "percentUsed": { "@id": "lapc:percentUsed.json" },
@@ -122,6 +122,11 @@
         "filename": { "@id": "lapc:filename.json" },
         "externalJavascript": { "@id": "lapc:externalJavascript.json" },
         "externalCSS": { "@id": "lapc:externalCSS.json" },
+        "accessibility": { "@id": "lapc:accessibility.json" },
+        "headingOrder": { "@id": "lapc:headingOrder.json" },
+        "level": { "@id": "lapc:level.json" },
+        "ancestry": { "@id": "lapc:ancestry.json" },
+
 
         "pageReport" : { "@id": "lapc:pageReport.json" }
     }
