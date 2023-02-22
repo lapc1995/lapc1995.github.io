@@ -117,9 +117,9 @@
         "fontWeight": { "@id": "lapc:fontWeight.json" },
         "expectedContrastRatio": { "@id": "lapc:expectedContrastRatio.json" },
         "timestamp": { "@id": "lapc:timestamp.json" },
-
-    
-
+        "originalUrl": { "@id": "lapc:originalUrl.json" },
+        "date": { "@id": "lapc:date.json" },
+        "filename": { "@id": "lapc:filename.json" },
 
         "pageReport" : { "@id": "lapc:pageReport.json" }
     }

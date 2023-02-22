@@ -120,6 +120,42 @@
           "schema:rangeIncludes": {
             "@id": "lapc:accessibility.json"
           }
+      },
+      {
+        "@id": "lapc:originalUrl.json",
+        "@type": "rdf:Property",
+        "rdfs:comment": "originalUrl.",
+        "rdfs:label": "originalUrl",
+        "schema:domainIncludes": {
+            "@id": "lapc:pageReport.json"
+          },
+          "schema:rangeIncludes": {
+            "@id": "schema:URL"
+          }
+      },
+      {
+        "@id": "lapc:date.json",
+        "@type": "rdf:Property",
+        "rdfs:comment": "date.",
+        "rdfs:label": "date",
+        "schema:domainIncludes": {
+            "@id": "lapc:pageReport.json"
+          },
+          "schema:rangeIncludes": {
+            "@id": "schema:Integer"
+          }
+      },
+      {
+        "@id": "lapc:filename.json",
+        "@type": "rdf:Property",
+        "rdfs:comment": "filename.",
+        "rdfs:label": "filename",
+        "schema:domainIncludes": {
+            "@id": "lapc:pageReport.json"
+          },
+          "schema:rangeIncludes": {
+            "@id": "schema:Text"
+          }
       }
     ]
 }
