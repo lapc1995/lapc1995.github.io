@@ -1,6 +1,11 @@
 <footer id="footer">
-  <section>
-    <div id="mapid" style="height: 100%;"></div>
+  <section class="split contact">
+      <!--section style="height: 100%;">
+        <section id="mapid" style="height: 100%;"></section> 
+      </section-->
+      <section>
+        <div id="mapid" style="height: 100%;"></div> 
+      </section>
   </section>
   <section class="split contact">
     <section class="alt">
@@ -26,7 +31,42 @@
   <ul><li>&copy; Luis Carvalho</li><li>Design by <a href="https://html5up.net" rel="nofollow">HTML5 UP</a> & <a href="https://luiscarvalho.dev" rel="nofollow"> Me</a></li></ul>
 </div>
 
+<script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+
+
+<link rel="preload" href="assets/css/font-awesome.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="assets/css/font-awesome.min.css"></noscript>
+
+
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+crossorigin=""/>
+
+<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+crossorigin=""></script>
+
 <script>
+
+
+document.addEventListener("DOMContentLoaded", function(){
+/*
+	const leafletStylesheet = document.createElement('link');
+	leafletStylesheet.rel = "stylesheet";
+	leafletStylesheet.href = "https://unpkg.com/leaflet@1.7.1/dist/leaflet.css";
+	leafletStylesheet.integrity = "sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==";
+	leafletStylesheet.crossOrigin = "anonymous";
+	document.getElementsByTagName('head')[0].appendChild(leafletStylesheet);
+
+	const leafletScript = document.createElement('script');
+	leafletScript.src = "https://unpkg.com/leaflet@1.7.1/dist/leaflet.js";
+	leafletScript.integrity = "sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==";
+	leafletScript.crossOrigin = "anonymous";
+	document.getElementsByTagName('head')[0].appendChild(leafletScript);
+
+*/
+
+
 
 var osmUrl = 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
 		osmAttrib = '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
@@ -36,4 +76,5 @@ var osmUrl = 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
 
 	L.marker([54.976694,-1.606902])
 		.addTo(map)
+});
 </script>
