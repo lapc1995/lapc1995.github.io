@@ -96,6 +96,18 @@
           "schema:rangeIncludes": {
             "@id": "lapc:image.json"
           }
+      },
+      {
+        "@id": "lapc:technology.json",
+        "@type": "rdf:Property",
+        "rdfs:comment": "A technology.",
+        "rdfs:label": "technologies",
+        "schema:domainIncludes": {
+            "@id": "lapc:pageReport.json"
+          },
+          "schema:rangeIncludes": {
+            "@id": "lapc:technology.json"
+          }
       }
     ]
 }

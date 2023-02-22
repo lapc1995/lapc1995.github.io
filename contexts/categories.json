@@ -43,7 +43,7 @@
     "rdfs:comment": "Slug of the technology.",
     "rdfs:label": "slug",
     "schema:domainIncludes": {
-      "@id": "lapc:technology.json"
+      "@id": "lapc:categories.json"
     },
     "schema:rangeIncludes": {
       "@id": "schema:Text"
@@ -55,7 +55,7 @@
     "rdfs:comment": "Name of the cookie",
     "rdfs:label": "name",
     "schema:domainIncludes": {
-      "@id": "lapc:pageReport.json"
+      "@id": "lapc:categories.json"
     },
     "schema:rangeIncludes": {
       "@id": "schema:Text"
@@ -67,7 +67,31 @@
     "rdfs:comment": "id of the category",
     "rdfs:label": "id",
     "schema:domainIncludes": {
-      "@id": "lapc:technology.json"
+      "@id": "lapc:categories.json"
+    },
+    "schema:rangeIncludes": {
+      "@id": "schema:Integer"
+    }  
+  },
+  {
+    "@id": "lapc:groups.json",
+    "@type": "rdf:Property",
+    "rdfs:comment": "groups of the category",
+    "rdfs:label": "groups",
+    "schema:domainIncludes": {
+      "@id": "lapc:categories.json"
+    },
+    "schema:rangeIncludes": {
+      "@id": "schema:Integer"
+    }
+  },
+  {
+    "@id": "lapc:priority.json",
+    "@type": "rdf:Property",
+    "rdfs:comment": "priority of the category",
+    "rdfs:label": "priority",
+    "schema:domainIncludes": {
+      "@id": "lapc:categories.json"
     },
     "schema:rangeIncludes": {
       "@id": "schema:Integer"

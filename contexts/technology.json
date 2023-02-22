@@ -86,18 +86,6 @@
     }
   },
   {
-    "@id": "lapc:path.json",
-    "@type": "rdf:Property",
-    "rdfs:comment": "Path of the cookie",
-    "rdfs:label": "path",
-    "schema:domainIncludes": {
-      "@id": "lapc:cookie.json"
-    },
-    "schema:rangeIncludes": {
-      "@id": "schema:Text"
-    }
-  },
-  {
     "@id": "lapc:website.json",
     "@type": "rdf:Property",
     "rdfs:comment": "website of the technology",

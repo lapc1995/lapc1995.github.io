@@ -71,6 +71,17 @@
         "alt": { "@id": "lapc:alt.json" },
         "src": { "@id": "lapc:src.json" },
 
+        "technology": { "@id": "lapc:technology.json" },
+        "technologies": { "@id": "lapc:technology.json" },
+        "slug": { "@id": "lapc:slug.json" },
+        "confidence": { "@id": "lapc:confidence.json" },
+        "version": { "@id": "lapc:version.json" },
+        "website": { "@id": "lapc:website.json" },
+        "cpe": { "@id": "lapc:cpe.json" },
+        "categories": { "@id": "lapc:categories.json" },
+        "groups": { "@id": "lapc:groups.json" },
+        "id": { "@id": "lapc:id.json" },
+        "priority": { "@id": "lapc:priority.json" },
 
 
         "pageReport" : { "@id": "lapc:pageReport.json" }
