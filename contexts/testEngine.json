@@ -32,69 +32,69 @@
 },
 "@graph": [
   {
-    "@id": "lapc:categories.json",
+    "@id": "lapc:testEnvironment.json",
     "@type": "rdfs:Class",
-    "rdfs:comment": "categories.",
-    "rdfs:label": "categories"
+    "rdfs:comment": "A testEnvironment.",
+    "rdfs:label": "testEnvironment"
   },
   {
-    "@id": "lapc:slug.json",
+    "@id": "lapc:userAgent.json",
     "@type": "rdf:Property",
-    "rdfs:comment": "Slug of the technology.",
-    "rdfs:label": "slug",
+    "rdfs:comment": "userAgent of the testEnvironment",
+    "rdfs:label": "userAgent",
     "schema:domainIncludes": {
-      "@id": "lapc:categories.json"
-    },
-    "schema:rangeIncludes": {
-      "@id": "schema:Text"
-    }
-  },
-  {
-    "@id": "lapc:name.json",
-    "@type": "rdf:Property",
-    "rdfs:comment": "Name of the cookie",
-    "rdfs:label": "name",
-    "schema:domainIncludes": {
-      "@id": "lapc:categories.json"
+      "@id": "lapc:testEnvironment.json"
     },
     "schema:rangeIncludes": {
       "@id": "schema:Text"
     }
   },  
   {
-    "@id": "lapc:id.json",
+    "@id": "lapc:windowWidth.json",
     "@type": "rdf:Property",
-    "rdfs:comment": "id of the category",
-    "rdfs:label": "id",
+    "rdfs:comment": "windowWidth of the testEngine",
+    "rdfs:label": "windowWidth",
     "schema:domainIncludes": {
-      "@id": "lapc:categories.json"
-    },
-    "schema:rangeIncludes": {
-      "@id": "schema:Integer"
-    }  
-  },
-  {
-    "@id": "lapc:groups.json",
-    "@type": "rdf:Property",
-    "rdfs:comment": "groups of the category",
-    "rdfs:label": "groups",
-    "schema:domainIncludes": {
-      "@id": "lapc:categories.json"
+      "@id": "lapc:testEnvironment.json"
     },
     "schema:rangeIncludes": {
       "@id": "schema:Integer"
     }
   },
   {
-    "@id": "lapc:priority.json",
+    "@id": "lapc:windowHeight.json",
     "@type": "rdf:Property",
-    "rdfs:comment": "priority of the category",
-    "rdfs:label": "priority",
+    "rdfs:comment": "windowHeight of the testEngine",
+    "rdfs:label": "windowHeight",
     "schema:domainIncludes": {
-      "@id": "lapc:categories.json"
+      "@id": "lapc:testEnvironment.json"
     },
     "schema:rangeIncludes": {
       "@id": "schema:Integer"
+    }
+  },
+  {
+    "@id": "lapc:orientationAngle.json",
+    "@type": "rdf:Property",
+    "rdfs:comment": "orientationAngle of the testEngine",
+    "rdfs:label": "orientationAngle",
+    "schema:domainIncludes": {
+      "@id": "lapc:testEnvironment.json"
+    },
+    "schema:rangeIncludes": {
+      "@id": "schema:Integer"
+    }
+  },
+  {
+    "@id": "lapc:orientationType.json",
+    "@type": "rdf:Property",
+    "rdfs:comment": "orientationType of the testEngine",
+    "rdfs:label": "orientationType",
+    "schema:domainIncludes": {
+      "@id": "lapc:testEnvironment.json"
+    },
+    "schema:rangeIncludes": {
+      "@id": "schema:Text"
     }
   }
 ]

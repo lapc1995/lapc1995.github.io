@@ -32,94 +32,131 @@
 },
 "@graph": [
   {
-    "@id": "lapc:technology.json",
+    "@id": "lapc:data.json",
     "@type": "rdfs:Class",
-    "rdfs:comment": "A technology.",
-    "rdfs:label": "technology"
+    "rdfs:comment": "data",
+    "rdfs:label": "data"
   },
   {
-    "@id": "lapc:slug.json",
+    "@id": "lapc:role.json",
     "@type": "rdf:Property",
-    "rdfs:comment": "Slug of the technology.",
-    "rdfs:label": "slug",
+    "rdfs:comment": "role",
+    "rdfs:label": "role",
     "schema:domainIncludes": {
-      "@id": "lapc:technology.json"
-    },
-    "schema:rangeIncludes": {
-      "@id": "schema:Text"
-    }
-  },
-  {
-    "@id": "lapc:name.json",
-    "@type": "rdf:Property",
-    "rdfs:comment": "Name of the cookie",
-    "rdfs:label": "name",
-    "schema:domainIncludes": {
-      "@id": "lapc:pageReport.json"
+      "@id": "lapc:data.json"
     },
     "schema:rangeIncludes": {
       "@id": "schema:Text"
     }
   },  
   {
-    "@id": "lapc:confidence.json",
+    "@id": "lapc:accessibleText.json",
     "@type": "rdf:Property",
-    "rdfs:comment": "confidence of the technology",
-    "rdfs:label": "confidence",
+    "rdfs:comment": "accessibleText",
+    "rdfs:label": "accessibleText",
     "schema:domainIncludes": {
-      "@id": "lapc:technology.json"
-    },
-    "schema:rangeIncludes": {
-      "@id": "schema:Integer"
-    }
-  },
-  {
-    "@id": "lapc:version.json",
-    "@type": "rdf:Property",
-    "rdfs:comment": "Version of the technology.",
-    "rdfs:label": "version",
-    "schema:domainIncludes": {
-      "@id": "lapc:technology.json"
+      "@id": "lapc:data.json"
     },
     "schema:rangeIncludes": {
       "@id": "schema:Text"
     }
   },
   {
-    "@id": "lapc:website.json",
+    "@id": "lapc:isIframe.json",
     "@type": "rdf:Property",
-    "rdfs:comment": "website of the technology",
-    "rdfs:label": "website",
+    "rdfs:comment": "isIframe",
+    "rdfs:label": "isIframe",
     "schema:domainIncludes": {
-      "@id": "lapc:technology.json"
-    },
-    "schema:rangeIncludes": {
-      "@id": "schema:URL"
-    }
-  },
-  {
-    "@id": "lapc:cpe.json",
-    "@type": "rdf:Property",
-    "rdfs:comment": "cpe of the technology",
-    "rdfs:label": "cpe",
-    "schema:domainIncludes": {
-      "@id": "lapc:technology.json"
-    },
-    "schema:rangeIncludes": {
-      "@id": "schema:Text"
-    }
-  },
-  {
-    "@id": "lapc:categories.json",
-    "@type": "rdf:Property",
-    "rdfs:comment": "category of the technology",
-    "rdfs:label": "category",
-    "schema:domainIncludes": {
-      "@id": "lapc:technology.json"
+      "@id": "lapc:data.json"
     },
     "schema:rangeIncludes": {
       "@id": "schema:Boolean"
     }
+  },
+  {
+    "@id": "lapc:fgColor.json",
+    "@type": "rdf:Property",
+    "rdfs:comment": "fgColor",
+    "rdfs:label": "fgColor",
+    "schema:domainIncludes": {
+      "@id": "lapc:data.json"
+    },
+    "schema:rangeIncludes": {
+      "@id": "schema:Text"
+    }
+  },
+  {
+    "@id": "lapc:bgColor.json",
+    "@type": "rdf:Property",
+    "rdfs:comment": "bgColor",
+    "rdfs:label": "bgColor",
+    "schema:domainIncludes": {
+      "@id": "lapc:data.json"
+    },
+    "schema:rangeIncludes": {
+      "@id": "schema:Text"
+    }
+  },
+  {
+    "@id": "lapc:contrastRatio.json",
+    "@type": "rdf:Property",
+    "rdfs:comment": "contrastRatio",
+    "rdfs:label": "contrastRatio",
+    "schema:domainIncludes": {
+      "@id": "lapc:data.json"
+    },
+    "schema:rangeIncludes": {
+      "@id": "schema:Float"
+    }
+  },
+  {
+    "@id": "lapc:fontSize.json",
+    "@type": "rdf:Property",
+    "rdfs:comment": "fontSize",
+    "rdfs:label": "fontSize",
+    "schema:domainIncludes": {
+      "@id": "lapc:data.json"
+    },
+    "schema:rangeIncludes": {
+      "@id": "schema:Text"
+    }
+  },
+  {
+    "@id": "lapc:fontWeight.json",
+    "@type": "rdf:Property",
+    "rdfs:comment": "fontWeight",
+    "rdfs:label": "fontWeight",
+    "schema:domainIncludes": {
+      "@id": "lapc:data.json"
+    },
+    "schema:rangeIncludes": {
+      "@id": "schema:Text"
+    }
+  },
+  {
+    "@id": "lapc:expectedContrastRatio.json",
+    "@type": "rdf:Property",
+    "rdfs:comment": "expectedContrastRatio",
+    "rdfs:label": "expectedContrastRatio",
+    "schema:domainIncludes": {
+      "@id": "lapc:data.json"
+    },
+    "schema:rangeIncludes": {
+      "@id": "schema:Text"
+    }
+  },
+  {
+    "@id": "lapc:headingOrder.json",
+    "@type": "rdf:Property",
+    "rdfs:comment": "headingOrder",
+    "rdfs:label": "headingOrder",
+    "schema:domainIncludes": {
+      "@id": "lapc:data.json"
+    },
+    "schema:rangeIncludes": {
+      "@id": "schema:headingOrder.json"
+    }
   }
+
 ]
 }

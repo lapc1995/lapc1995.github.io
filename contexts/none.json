@@ -32,69 +32,57 @@
     },
     "@graph": [
       {
-        "@id": "lapc:coverage.json",
+        "@id": "lapc:none.json",
         "@type": "rdfs:Class",
-        "rdfs:comment": "Page coverage report element.",
-        "rdfs:label": "coverage"
+        "rdfs:comment": "none.",
+        "rdfs:label": "none"
       },
       {
-        "@id": "lapc:url.json",
+        "@id": "lapc:id.json",
         "@type": "rdf:Property",
-        "rdfs:comment": "Url of the coverage.",
-        "rdfs:label": "url",
+        "rdfs:comment": "id",
+        "rdfs:label": "id",
         "schema:domainIncludes": {
-          "@id": "lapc:coverage.json"
+          "@id": "lapc:any.json"
         },
         "schema:rangeIncludes": {
-          "@id": "schema:URL"
+          "@id": "schema:Text"
         }
       },  
       {
-        "@id": "lapc:type.json",
+        "@id": "lapc:impact.json",
         "@type": "rdf:Property",
-        "rdfs:comment": "Type of the coverage.",
-        "rdfs:label": "type",
+        "rdfs:comment": "impact",
+        "rdfs:label": "impact",
         "schema:domainIncludes": {
-          "@id": "lapc:coverage.json"
+          "@id": "lapc:any.json"
         },
         "schema:rangeIncludes": {
           "@id": "schema:Text"
         }
       },
       {
-        "@id": "lapc:usedBytes.json",
+        "@id": "lapc:relatedNodes.json",
         "@type": "rdf:Property",
-        "rdfs:comment": "usedBytes of the coverage.",
-        "rdfs:label": "usedBytes",
+        "rdfs:comment": "relatedNodes",
+        "rdfs:label": "relatedNodes",
         "schema:domainIncludes": {
-          "@id": "lapc:coverage.json"
+          "@id": "lapc:any.json"
         },
         "schema:rangeIncludes": {
-          "@id": "schema:Integer"
+          "@id": "lapc:relatedNodes.json"
         }
       },
       {
-        "@id": "lapc:totalBytes.json",
+        "@id": "lapc:data.json",
         "@type": "rdf:Property",
-        "rdfs:comment": "totalBytes of the coverage.",
-        "rdfs:label": "totalBytes",
+        "rdfs:comment": "data",
+        "rdfs:label": "data",
         "schema:domainIncludes": {
-          "@id": "lapc:coverage.json"
+          "@id": "lapc:any.json"
         },
         "schema:rangeIncludes": {
-          "@id": "schema:Integer"
-        }
-      },
-      {
-        "@id": "lapc:percentUsed.json",
-        "@type": "rdf:Property",
-        "rdfs:comment": "percentUsed of the coverage.",
-        "rdfs:label": "percentUsed",
-        "schema:domainIncludes": {
-          "@id": "lapc:coverage.json"
-        },
-        "schema:rangeIncludes": {
-          "@id": "schema:Text"
+          "@id": "lapc:data.json"
         }
       }
     ]

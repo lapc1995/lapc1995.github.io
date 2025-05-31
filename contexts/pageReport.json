@@ -96,6 +96,90 @@
           "schema:rangeIncludes": {
             "@id": "lapc:image.json"
           }
+      },
+      {
+        "@id": "lapc:technology.json",
+        "@type": "rdf:Property",
+        "rdfs:comment": "A technology.",
+        "rdfs:label": "technologies",
+        "schema:domainIncludes": {
+            "@id": "lapc:pageReport.json"
+          },
+          "schema:rangeIncludes": {
+            "@id": "lapc:technology.json"
+          }
+      },
+      {
+        "@id": "lapc:accessibility.json",
+        "@type": "rdf:Property",
+        "rdfs:comment": "A accessibility.",
+        "rdfs:label": "accessibility",
+        "schema:domainIncludes": {
+            "@id": "lapc:pageReport.json"
+          },
+          "schema:rangeIncludes": {
+            "@id": "lapc:accessibility.json"
+          }
+      },
+      {
+        "@id": "lapc:originalUrl.json",
+        "@type": "rdf:Property",
+        "rdfs:comment": "originalUrl.",
+        "rdfs:label": "originalUrl",
+        "schema:domainIncludes": {
+            "@id": "lapc:pageReport.json"
+          },
+          "schema:rangeIncludes": {
+            "@id": "schema:URL"
+          }
+      },
+      {
+        "@id": "lapc:date.json",
+        "@type": "rdf:Property",
+        "rdfs:comment": "date.",
+        "rdfs:label": "date",
+        "schema:domainIncludes": {
+            "@id": "lapc:pageReport.json"
+          },
+          "schema:rangeIncludes": {
+            "@id": "schema:Integer"
+          }
+      },
+      {
+        "@id": "lapc:filename.json",
+        "@type": "rdf:Property",
+        "rdfs:comment": "filename.",
+        "rdfs:label": "filename",
+        "schema:domainIncludes": {
+            "@id": "lapc:pageReport.json"
+          },
+          "schema:rangeIncludes": {
+            "@id": "schema:Text"
+          }
+      },
+      {
+        "@id": "lapc:externalJavascript.json",
+        "@type": "rdf:Property",
+        "rdfs:comment": "externalJavascript.",
+        "rdfs:label": "externalJavascript",
+        "schema:domainIncludes": {
+            "@id": "lapc:pageReport.json"
+          },
+          "schema:rangeIncludes": {
+            "@id": "schema:URL"
+          }
+      },
+      {
+        "@id": "lapc:externalCSS.json",
+        "@type": "rdf:Property",
+        "rdfs:comment": "externalCSS.",
+        "rdfs:label": "externalCSS",
+        "schema:domainIncludes": {
+            "@id": "lapc:pageReport.json"
+          },
+          "schema:rangeIncludes": {
+            "@id": "schema:URL"
+          }
       }
     ]
 }

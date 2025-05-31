@@ -32,69 +32,81 @@
 },
 "@graph": [
   {
-    "@id": "lapc:categories.json",
+    "@id": "lapc:nodes.json",
     "@type": "rdfs:Class",
-    "rdfs:comment": "categories.",
-    "rdfs:label": "categories"
+    "rdfs:comment": "A nodes.",
+    "rdfs:label": "nodes"
   },
   {
-    "@id": "lapc:slug.json",
+    "@id": "lapc:any.json",
     "@type": "rdf:Property",
-    "rdfs:comment": "Slug of the technology.",
-    "rdfs:label": "slug",
+    "rdfs:comment": "any",
+    "rdfs:label": "any",
     "schema:domainIncludes": {
-      "@id": "lapc:categories.json"
+      "@id": "lapc:nodes.json"
     },
     "schema:rangeIncludes": {
-      "@id": "schema:Text"
-    }
-  },
-  {
-    "@id": "lapc:name.json",
-    "@type": "rdf:Property",
-    "rdfs:comment": "Name of the cookie",
-    "rdfs:label": "name",
-    "schema:domainIncludes": {
-      "@id": "lapc:categories.json"
-    },
-    "schema:rangeIncludes": {
-      "@id": "schema:Text"
+      "@id": "schema:any.json"
     }
   },  
   {
-    "@id": "lapc:id.json",
+    "@id": "lapc:none.json",
     "@type": "rdf:Property",
-    "rdfs:comment": "id of the category",
-    "rdfs:label": "id",
+    "rdfs:comment": "none",
+    "rdfs:label": "value",
     "schema:domainIncludes": {
-      "@id": "lapc:categories.json"
+      "@id": "lapc:nodes.json"
     },
     "schema:rangeIncludes": {
-      "@id": "schema:Integer"
-    }  
-  },
-  {
-    "@id": "lapc:groups.json",
-    "@type": "rdf:Property",
-    "rdfs:comment": "groups of the category",
-    "rdfs:label": "groups",
-    "schema:domainIncludes": {
-      "@id": "lapc:categories.json"
-    },
-    "schema:rangeIncludes": {
-      "@id": "schema:Integer"
+      "@id": "schema:none.json"
     }
   },
   {
-    "@id": "lapc:priority.json",
+    "@id": "lapc:all.json",
     "@type": "rdf:Property",
-    "rdfs:comment": "priority of the category",
-    "rdfs:label": "priority",
+    "rdfs:comment": "all",
+    "rdfs:label": "all",
     "schema:domainIncludes": {
-      "@id": "lapc:categories.json"
+      "@id": "lapc:nodes.json"
     },
     "schema:rangeIncludes": {
-      "@id": "schema:Integer"
+      "@id": "schema:none.json"
+    }
+  },
+  {
+    "@id": "lapc:html.json",
+    "@type": "rdf:Property",
+    "rdfs:comment": "html",
+    "rdfs:label": "html",
+    "schema:domainIncludes": {
+      "@id": "lapc:nodes.json"
+    },
+    "schema:rangeIncludes": {
+      "@id": "schema:Text"
+    }
+  },
+  {
+    "@id": "lapc:target.json",
+    "@type": "rdf:Property",
+    "rdfs:comment": "target.",
+    "rdfs:label": "target",
+    "schema:domainIncludes": {
+      "@id": "lapc:nodes.json"
+    },
+    "schema:rangeIncludes": {
+      "@id": "schema:Text"
+    }
+  },
+  {
+    "@id": "lapc:failureSummary.json",
+    "@type": "rdf:Property",
+    "rdfs:comment": "failureSummary.",
+    "rdfs:label": "failureSummary",
+    "schema:domainIncludes": {
+      "@id": "lapc:nodes.json"
+    },
+    "schema:rangeIncludes": {
+      "@id": "schema:Text"
     }
   }
 ]

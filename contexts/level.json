@@ -30,15 +30,15 @@
       "xsd": "http://www.w3.org/2001/XMLSchema#",
       "lapc": "https://luiscarvalho.dev/contexts/"
     },
-    "@id": "lapc:coverageType.json",
+    "@id": "lapc:level.json",
     "@type": "rdf:Property",
-    "rdfs:comment": "Type of the coverage.",
-    "rdfs:label": "coverageType",
+    "rdfs:comment": "level",
+    "rdfs:label": "level",
     "schema:domainIncludes": {
-      "@id": "lapc:coverage.json"
+      "@id": "lapc:headingOrder.json"
     },
     "schema:rangeIncludes": {
-      "@id": "schema:Text"
+      "@id": "schema:Integer"
     }
   }
   

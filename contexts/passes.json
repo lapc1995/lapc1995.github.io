@@ -32,69 +32,57 @@
 },
 "@graph": [
   {
-    "@id": "lapc:categories.json",
+    "@id": "lapc:passes.json",
     "@type": "rdfs:Class",
-    "rdfs:comment": "categories.",
-    "rdfs:label": "categories"
+    "rdfs:comment": "A passes.",
+    "rdfs:label": "passes"
   },
   {
-    "@id": "lapc:slug.json",
+    "@id": "lapc:id.json",
     "@type": "rdf:Property",
-    "rdfs:comment": "Slug of the technology.",
-    "rdfs:label": "slug",
+    "rdfs:comment": "id of the pass.",
+    "rdfs:label": "id",
     "schema:domainIncludes": {
-      "@id": "lapc:categories.json"
-    },
-    "schema:rangeIncludes": {
-      "@id": "schema:Text"
-    }
-  },
-  {
-    "@id": "lapc:name.json",
-    "@type": "rdf:Property",
-    "rdfs:comment": "Name of the cookie",
-    "rdfs:label": "name",
-    "schema:domainIncludes": {
-      "@id": "lapc:categories.json"
+      "@id": "lapc:passes.json"
     },
     "schema:rangeIncludes": {
       "@id": "schema:Text"
     }
   },  
   {
-    "@id": "lapc:id.json",
+    "@id": "lapc:impact.json",
     "@type": "rdf:Property",
-    "rdfs:comment": "id of the category",
-    "rdfs:label": "id",
+    "rdfs:comment": "impact of the pass.",
+    "rdfs:label": "impact",
     "schema:domainIncludes": {
-      "@id": "lapc:categories.json"
+      "@id": "lapc:passes.json"
     },
     "schema:rangeIncludes": {
-      "@id": "schema:Integer"
-    }  
-  },
-  {
-    "@id": "lapc:groups.json",
-    "@type": "rdf:Property",
-    "rdfs:comment": "groups of the category",
-    "rdfs:label": "groups",
-    "schema:domainIncludes": {
-      "@id": "lapc:categories.json"
-    },
-    "schema:rangeIncludes": {
-      "@id": "schema:Integer"
+      "@id": "schema:Text"
     }
   },
   {
-    "@id": "lapc:priority.json",
+    "@id": "lapc:tags.json",
     "@type": "rdf:Property",
-    "rdfs:comment": "priority of the category",
-    "rdfs:label": "priority",
+    "rdfs:comment": "tags of the pass.",
+    "rdfs:label": "domain",
     "schema:domainIncludes": {
-      "@id": "lapc:categories.json"
+      "@id": "lapc:cookie.json"
     },
     "schema:rangeIncludes": {
-      "@id": "schema:Integer"
+      "@id": "schema:Text"
+    }
+  },
+  {
+    "@id": "lapc:nodes.json",
+    "@type": "rdf:Property",
+    "rdfs:comment": "nodes of the pass.",
+    "rdfs:label": "nodes",
+    "schema:domainIncludes": {
+      "@id": "lapc:passes.json"
+    },
+    "schema:rangeIncludes": {
+      "@id": "lapc:node.json"
     }
   }
 ]

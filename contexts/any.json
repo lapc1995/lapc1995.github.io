@@ -32,69 +32,57 @@
 },
 "@graph": [
   {
-    "@id": "lapc:categories.json",
+    "@id": "lapc:any.json",
     "@type": "rdfs:Class",
-    "rdfs:comment": "categories.",
-    "rdfs:label": "categories"
+    "rdfs:comment": "any.",
+    "rdfs:label": "any"
   },
   {
-    "@id": "lapc:slug.json",
+    "@id": "lapc:id.json",
     "@type": "rdf:Property",
-    "rdfs:comment": "Slug of the technology.",
-    "rdfs:label": "slug",
+    "rdfs:comment": "id",
+    "rdfs:label": "id",
     "schema:domainIncludes": {
-      "@id": "lapc:categories.json"
-    },
-    "schema:rangeIncludes": {
-      "@id": "schema:Text"
-    }
-  },
-  {
-    "@id": "lapc:name.json",
-    "@type": "rdf:Property",
-    "rdfs:comment": "Name of the cookie",
-    "rdfs:label": "name",
-    "schema:domainIncludes": {
-      "@id": "lapc:categories.json"
+      "@id": "lapc:any.json"
     },
     "schema:rangeIncludes": {
       "@id": "schema:Text"
     }
   },  
   {
-    "@id": "lapc:id.json",
+    "@id": "lapc:impact.json",
     "@type": "rdf:Property",
-    "rdfs:comment": "id of the category",
-    "rdfs:label": "id",
+    "rdfs:comment": "impact",
+    "rdfs:label": "impact",
     "schema:domainIncludes": {
-      "@id": "lapc:categories.json"
+      "@id": "lapc:any.json"
     },
     "schema:rangeIncludes": {
-      "@id": "schema:Integer"
-    }  
-  },
-  {
-    "@id": "lapc:groups.json",
-    "@type": "rdf:Property",
-    "rdfs:comment": "groups of the category",
-    "rdfs:label": "groups",
-    "schema:domainIncludes": {
-      "@id": "lapc:categories.json"
-    },
-    "schema:rangeIncludes": {
-      "@id": "schema:Integer"
+      "@id": "schema:Text"
     }
   },
   {
-    "@id": "lapc:priority.json",
+    "@id": "lapc:relatedNodes.json",
     "@type": "rdf:Property",
-    "rdfs:comment": "priority of the category",
-    "rdfs:label": "priority",
+    "rdfs:comment": "relatedNodes",
+    "rdfs:label": "relatedNodes",
     "schema:domainIncludes": {
-      "@id": "lapc:categories.json"
+      "@id": "lapc:any.json"
     },
     "schema:rangeIncludes": {
-      "@id": "schema:Integer"
+      "@id": "lapc:relatedNodes.json"
+    }
+  },
+  {
+    "@id": "lapc:data.json",
+    "@type": "rdf:Property",
+    "rdfs:comment": "data",
+    "rdfs:label": "data",
+    "schema:domainIncludes": {
+      "@id": "lapc:any.json"
+    },
+    "schema:rangeIncludes": {
+      "@id": "lapc:data.json"
     }
   }
 ]
